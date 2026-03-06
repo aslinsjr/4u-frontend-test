@@ -1,0 +1,73 @@
+.archivement-card {
+    width: 103px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.archivement-img {
+    max-width: 103px;
+    aspect-ratio: 1;
+    position: relative;
+    padding: 1rem;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.archivement-img img {
+    border-radius: 5px;
+}
+
+.archivement-badge {
+    display: flex;
+    width: 37px;
+    height: 37px;
+    background-color: #3700FF;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 0.75rem 0 0.75rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.archivement-title {
+    max-width: 103px;
+    margin-top: 0.5rem;
+}
+
+.archivement-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 143%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.archivement-card:hover {
+    background-color: #414141;
+}
+
+.archivement-card:hover .archivement-img,
+.archivement-card.active .archivement-img,
+.archivement-card:hover .archivement-title,
+.archivement-card.active .archivement-title {
+    transform: scale(0.9);
+    transition: 0.3s;
+    margin-top: 0;
+}
+
+.archivement-card.active {
+    background-color: #3700FF;
+}
+
+.archivement-img svg {
+    color: #309E3A;
+    width: 3.5rem;
+    height: 3.5rem;
+}

@@ -1,0 +1,343 @@
+.archivements-modal,
+.individual-modal {
+    position: absolute;
+    width: 592px;
+    height: 556px;
+    bottom: -556px;
+    left: calc(50% - 244px);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #020202;
+    transition: 0.5s;
+}
+
+.archivements-modal.active-modal,
+.individual-modal.active-modal {
+    bottom: calc(50dvh - 278px);
+    animation: bounce 0.8s ease;
+    transition: 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: -556px;
+    }
+    
+    75% {
+        bottom: calc(50dvh - 250px);
+    }
+
+    100% {
+        bottom: calc(50dvh - 278px);
+    }
+
+}
+
+.archivements-modal .inner-header {
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.header-buttons,
+.header-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.game-select {
+    background-color: #2b2b2b;
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.close-btn {
+    background-color: #020202;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.close-btn svg {
+    width: 0.9rem;
+}
+
+.modal-info-container {
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.modal-archivement-list {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.archivement-modal-border {
+    width: 71px;
+    height: 71px;
+    position: relative;
+    border: 2px solid #3700FF;
+    border-radius: 10px;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.archivement-modal-border .archivement-badge {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+}
+
+.star-svg {
+    width: 11px;
+    height: 11px;
+}
+
+.archivement-modal-border svg,
+.archivement-modal-border img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.medal-svg {
+    color: hsla(125, 53%, 40%, 0.75);
+    width: 2rem;
+    height: 2rem;
+}
+
+.medal-modal-box {
+    width: 87%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020202;
+    border-radius: 10px;
+}
+
+.modal-goal-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+.info-goal-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goal-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #2a2a2a;
+    border-radius: 100px;
+}
+
+.inner-goal-bar.fill-50 {
+    width: 50%;
+    height: 100%;
+    background-color: #A5EFFF;
+    border-radius: 100px;
+}
+
+.social-and-search-container {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+}
+
+.search-box {
+    width: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #020202;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.search-box input {
+    background-color: #020202;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    color: white;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.compare-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363636;
+    border: none;
+    width: 217px;
+    border-radius: 100px;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.compare-avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #575757;
+    color: #8C8C8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compare-avatar svg {
+    width: 1.4rem;
+    height: 1.3rem;
+}
+
+.compare-btn p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.arrow-btn {
+    color: white;
+    width: 0.85rem;
+    font-weight: bolder;
+}
+
+.archivement-list-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-height: 300px;
+    overflow-y: scroll;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.archivement-list-descriptions::-webkit-scrollbar {
+    display: none;
+}
+
+.descripition-item-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.descripition-item {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.descripition-item .medal-modal-box,
+.descripition-item img {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+}
+
+.descripition-item .medal-modal-box svg {
+    width: 1.2rem;
+}
+
+.not-archived {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.not-archived .descripition-item img {
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+
+.not-archived .descripition-item .medal-modal-box {
+    opacity: 0.3;
+}
+
+.text-description-box {
+    font-size: 0.8rem;
+}
+
+.text-description-box h3 {
+    color: white;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.text-description-box span {
+    opacity: 0.4;
+}
+
+.compare-container {
+    width: 123px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.compare-avatar-box {
+    width: 51px;
+    height: 51px;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.compare-avatar-box-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#luiza-bg {
+    background-image: url(../../public/luiza-avatar.jpg);
+}
+
+#user-bg {
+    background-image: url(../../public/user-avatar.jpg);
+}
+
+.compare-avatar-box .grayscale {
+    filter: grayscale(100%);
+    opacity: 0.3;
+}

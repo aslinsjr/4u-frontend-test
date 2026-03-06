@@ -1,0 +1,88 @@
+.archivement-container {
+    width: 488px;
+    height: 274px;
+}
+
+.archivement-header {
+    display: flex;
+    width: 100%;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-header {
+    background-color: #111111;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 1rem 0 0 0;
+}
+
+.inner-header svg {
+    color: white;
+}
+
+.inner-header button {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.inner-header button:hover {
+    background-color: hsla(0, 0%, 17%, 0.5);
+}
+
+
+.edit-btn {
+    background-color: #111111;
+    padding: 1rem;
+    color: white;
+    border-radius: 0 1rem 0 0;
+}
+
+.edit-btn svg {
+    width: 1.3rem;
+}
+
+.edit-btn:hover {
+    background-color: #1f1f1f;
+}
+
+.archivement-box {
+    margin-top: 2px;
+    background-color: #111111;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.inner-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.scroll-right {
+    background-color: #020202;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.scroll-right:hover {
+    background-color: #1f1f1f;
+}
