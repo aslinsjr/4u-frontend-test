@@ -10,8 +10,8 @@ Essa é a solução para o teste proposto pela 4UPlayer. O objetivo era reproduz
 
 ### Links
 
-[Repositório](https://github.com/aslinsjr/4u-frontend-test)
-[Page](https://4u-frontend-test.vercel.app/)
+- Solução: [Repositório](https://github.com/aslinsjr/4u-frontend-test)
+- Página Online: [Page](https://4u-frontend-test.vercel.app/)
 
 ### Construido com
 
