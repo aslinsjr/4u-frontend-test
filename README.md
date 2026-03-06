@@ -10,8 +10,8 @@ Essa é a solução para o teste proposto pela 4UPlayer. O objetivo era reproduz
 
 ### Links
 
-- Solution URL: [Repository](https://github.com/aslinsjr/browser-extensions-manager-ui)
-- Live Site URL: [Page](https://aslinsjr.github.io/browser-extensions-manager-ui/)
+[Repositório](https://github.com/aslinsjr/4u-frontend-test)
+[Page](https://4u-frontend-test.vercel.app/)
 
 ### Construido com
 
